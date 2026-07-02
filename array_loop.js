@@ -95,16 +95,17 @@ for (const greet of greeting) {
  map.set('EU','EUROPE');
  map.set('SA','SOUTH AFRICA');
  map.set('IN','INDIA');
- console.log(map);
+//  console.log(map);
 
 for (const [key,value] of map) {
-    console.log(key, ":-", value);
+    // console.log(key, ":-", value);
 }
 
- const names= { 'game1' : 'nfs', 
-    'game2' : 'GTA'
-    }
-for (const [key,value] of names) {
+const objarr={JS:"JAVASCRIPT" ,
+    CPP:"C++",
+    py:"python"
+}
+for (const key in objarr) {
+    console.log(`${key} full form is ${objarr[key]}`);
     
-    console.log(key,":-", value);
 }
