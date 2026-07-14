@@ -15,4 +15,8 @@ promise
     })
     .catch(function(error){
         console.log(error)
+    })
+    .finally(function(last){
+        console.log("bahar aaja");
+        
     });
