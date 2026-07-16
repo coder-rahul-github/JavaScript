@@ -45,4 +45,19 @@ const regularuser={
         lastname:"misra"
     }}
 };
-console.log(regularuser.fullname.address?.username.lastname ?? "not exixst");
+//console.log(regularuser.fullname.address?.username.lastname ?? "not exixst");
+//-------------de-structure-------------------
+
+const user={
+    nameOfTheMonitor:"Rahul",
+    age: 24,
+    userstatus:"active",
+};
+user.nameOfTheMonitor="Rahul Das"
+// console.log(user.name);
+const {userstatus:status}= user
+const {nameOfTheMonitor:Monitor}= user
+
+
+console.log(Monitor);
+console.log(status);
