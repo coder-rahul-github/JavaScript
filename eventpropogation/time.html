@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rahul Das</h1>
+    <button id="name">stop</button>
+    <script>
+        let executed=false;
+        const changed=function(){
+            console.log("hello rahul das");
+            
+        }
+        const changedName=function(){
+            document.querySelector("h1")
+            .innerHTML="Sofware Developer"
+            executed=true;
+        }
+        const changeMe=setTimeout((changedName),2000)
+        document.querySelector('#name')
+        addEventListener('click', function(){
+            if(executed){
+                console.log("executed");
+                
+            }
+            else{
+                clearInterval(changedName)
+                console.log("executed");
+                
+            }
+        });
+        
+    </script>
+</body>
+</html>
